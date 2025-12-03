@@ -1,9 +1,10 @@
-require_relative "../base"
+# frozen_string_literal: true
 
+require_relative '../base'
+
+# Solution to Day 4
 class Day04 < Base
-  def part1
-  end
+  def part1; end
 
-  def part2
-  end
+  def part2; end
 end
