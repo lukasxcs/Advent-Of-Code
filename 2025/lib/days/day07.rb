@@ -2,10 +2,9 @@
 
 require_relative '../base'
 
+# Solution to Day 7
 class Day07 < Base
-  def part1
-  end
+  def part1; end
 
-  def part2
-  end
+  def part2; end
 end

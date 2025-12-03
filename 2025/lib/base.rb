@@ -5,7 +5,7 @@ class Base
   attr_reader :input
 
   def initialize(day_number)
-    @input = File.read(format('inputs/day%02d.txt', [day_number])).lines.map(&:chomp)
+    @input = File.read(format('inputs/day%02d.txt', day_number)).lines.map(&:chomp)
   end
 
   def part1
