@@ -19,7 +19,7 @@ class Day01 < Base
     zero_count
   end
 
-  def part2 # rubocop:disable Metrics/MethodLength
+  def part2
     dial = 50
     zero_count = 0
 
