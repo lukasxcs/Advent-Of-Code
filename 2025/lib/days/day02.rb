@@ -36,5 +36,30 @@ class Day02 < Base
     sum
   end
 
-  def part2; end
+  def part2
+    ranges = input[0].strip.split(',').map { |r| r.split('-').map(&:to_i) }
+
+    sum = 0
+
+    ranges.each do |from, to|
+      (from..to).each do |num|
+        s = num.to_s
+        len = s.length
+
+        (1..len / 2).each do |pattern_len|
+          next unless (len % pattern_len).zero?
+
+          pattern = s[0, pattern_len]
+          repeated = pattern * (len / pattern_len)
+
+          if repeated == s
+            sum += num
+            break
+          end
+        end
+      end
+    end
+
+    sum
+  end
 end
