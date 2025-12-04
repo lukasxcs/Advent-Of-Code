@@ -1,0 +1,24 @@
+{
+  "configurations": [
+    {
+      "type": "swift",
+      "request": "launch",
+      "args": [],
+      "cwd": "${workspaceFolder:2025_swift}",
+      "name": "Debug 2025_swift",
+      "target": "2025_swift",
+      "configuration": "debug",
+      "preLaunchTask": "swift: Build Debug 2025_swift"
+    },
+    {
+      "type": "swift",
+      "request": "launch",
+      "args": [],
+      "cwd": "${workspaceFolder:2025_swift}",
+      "name": "Release 2025_swift",
+      "target": "2025_swift",
+      "configuration": "release",
+      "preLaunchTask": "swift: Build Release 2025_swift"
+    }
+  ]
+}
